@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "red-triangle-free-images-at-clker-com-vector-clip-art-online-0W8cqq-clipart.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "red-triangle-free-images-at-clker-com-vector-clip-art-online-0W8cqq-clipart-1.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "red-triangle-free-images-at-clker-com-vector-clip-art-online-0W8cqq-clipart-2.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

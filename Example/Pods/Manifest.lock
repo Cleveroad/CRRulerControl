@@ -1,0 +1,16 @@
+PODS:
+  - CRRulerControl (0.1.0)
+
+DEPENDENCIES:
+  - CRRulerControl (from `../`)
+
+EXTERNAL SOURCES:
+  CRRulerControl:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CRRulerControl: f98f07bc98906bedbb46e6c1751bd9a07b914b67
+
+PODFILE CHECKSUM: c460c86759e3e5ae0f43108712c93f17419ede12
+
+COCOAPODS: 1.0.1

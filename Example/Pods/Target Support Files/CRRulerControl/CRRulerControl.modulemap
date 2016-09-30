@@ -1,0 +1,6 @@
+framework module CRRulerControl {
+  umbrella header "CRRulerControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
