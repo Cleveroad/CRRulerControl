@@ -2,6 +2,19 @@
 
 [![CI Status](http://img.shields.io/travis/Sergey/CRRulerControl.svg?style=flat)](https://travis-ci.org/Sergey/CRRulerControl) [![Version](https://img.shields.io/cocoapods/v/CRRulerControl.svg?style=flat)](http://cocoapods.org/pods/CRRulerControl) [![License](https://img.shields.io/cocoapods/l/CRRulerControl.svg?style=flat)](http://cocoapods.org/pods/CRRulerControl) [![Platform](https://img.shields.io/cocoapods/p/CRRulerControl.svg?style=flat)](http://cocoapods.org/pods/CRRulerControl)
 
+![Header image](/images/header.png)
+
+## Welcome to CRNetworkButton - Advanced Button Click Interaction
+
+Meet a new iOS library from Cleveroad. Just in case you are sick and tired of ordinary button clicks throughout mobile apps, we can offer you something new and unique. From now on, anytime the user clicks on the button that involves addressing to the server, they will see the animation that informs them of the progress and  completion. This new engaging button click interaction is made possible with CRNetworkButton library. 
+
+![Demo image](/images/demo_.gif)
+
+If you strive to convey a clear message to your app users by means of buttons, you are more than welcome to ingrate your iOS app with CRNetworkButton library. Facilitate user’s interaction with your app!
+
+
+[![Awesome](/images/logo-footer.png)](https://www.cleveroad.com/?utm_source=github&utm_medium=label&utm_campaign=contacts)
+<br/>
 
 A CocoaPod that simplifies the process of setting and reading values from the ruler. Supplied with UIControl subclass.
 
