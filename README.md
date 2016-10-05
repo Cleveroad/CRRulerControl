@@ -4,15 +4,15 @@
 
 ![Header image](/images/header.jpg)
 
-## Welcome to CRNetworkButton - Advanced Button Click Interaction
+## Meet CRRulerControl - Customizable Control Element for iOS
 
-Meet a new iOS library from Cleveroad. Just in case you are sick and tired of ordinary button clicks throughout mobile apps, we can offer you something new and unique. From now on, anytime the user clicks on the button that involves addressing to the server, they will see the animation that informs them of the progress and  completion. This new engaging button click interaction is made possible with CRNetworkButton library. 
+Cleveroad is happy to present a new library for iOS apps — CRRulerControl. Whether your app is going to operate over graphics or any scalable elements, ruler is crucial to provide users convenience and enhance their experience. Customizable component, created by Cleveroad iOS developers, is aimed at turning a simple ruler into a handy and smart instrument.
 
 ![Demo image](/images/demo.gif)
 
-#####Check out the animation on the <strong><a target="_blank" href="https://youtu.be/sJhBKyvF7i4?list=PLi-FH7__aeiydOwY_1q5I8P2EUSseqUCj">Fireworky Pull To Refresh for Android on YouTube</a></strong> in HD quality.
+#####Check out the animation of <strong><a target="_blank" href="https://youtu.be/sJhBKyvF7i4?list=PLi-FH7__aeiydOwY_1q5I8P2EUSseqUCj">CRRulerControl for iOS on YouTube</a></strong> in HD quality.
 
-If you strive to convey a clear message to your app users by means of buttons, you are more than welcome to ingrate your iOS app with CRNetworkButton library. Facilitate user’s interaction with your app!
+If you are ready to take a fresh look at traditional control elements, start with the Ruler. Integrate your iOS app with CRRulerControl library and try out all the benefits it provides.
 
 
 [![Awesome](/images/logo-footer.png)](https://www.cleveroad.com/?utm_source=github&utm_medium=label&utm_campaign=contacts)
