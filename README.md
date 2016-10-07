@@ -10,7 +10,7 @@ Cleveroad is happy to present a new library for iOS apps — CRRulerControl. Whe
 
 ![Demo image](/images/demo.gif)
 
-#####Check out the animation of <strong><a target="_blank" href="https://youtu.be/sJhBKyvF7i4?list=PLi-FH7__aeiydOwY_1q5I8P2EUSseqUCj">CRRulerControl for iOS on YouTube</a></strong> in HD quality.
+#####Check out the animation of <strong><a target="_blank" href="https://www.youtube.com/watch?v=PdEucF-YDjo">CRRulerControl for iOS on YouTube</a></strong> in HD quality.
 
 If you are ready to take a fresh look at traditional control elements, start with the Ruler. Integrate your iOS app with CRRulerControl library and try out all the benefits it provides.
 
