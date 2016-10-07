@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CRRulerControl_Example' do
+  pod 'CRRulerControl', :path => '../'
+
+  target 'CRRulerControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
