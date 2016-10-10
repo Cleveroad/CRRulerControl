@@ -14,6 +14,6 @@ s.author            = { "Sergey" => "Chuchukalo.cr@gmail.com" }
 s.source            = { :git => "https://github.com/Cleveroad/CRRulerControl.git", :tag => "1.0.0" }
 s.platform          = :ios, "8.0"
 s.requires_arc      = true
-s.source_files      = 'Pod/Classes/**/*.{h,m}'
+s.source_files      = 'CRRulerControl/Classes/**/*.{h,m}'
 
 end
