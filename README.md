@@ -4,7 +4,7 @@
 
 ![Header image](/images/header.jpg)
 
-## Meet CRRulerControl - Customizable Control Element for iOS
+## Meet CRRulerControl - Customizable Ruler Control for iOS
 
 Cleveroad is happy to present a new library for iOS apps — CRRulerControl. Whether your app is going to operate over graphics or any scalable elements, ruler is crucial to provide users convenience and enhance their experience. Customizable component, created by Cleveroad iOS developers, is aimed at turning a simple ruler into a handy and smart instrument.
 
