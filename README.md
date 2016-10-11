@@ -18,10 +18,6 @@ If you are ready to take a fresh look at traditional control elements, start wit
 [![Awesome](/images/logo-footer.png)](https://www.cleveroad.com/?utm_source=github&utm_medium=label&utm_campaign=contacts)
 <br/>
 
-A CocoaPod that simplifies the process of setting and reading values from the ruler. Supplied with UIControl subclass.
-
-Creating control elements is rather a simple task. However, it may take fairly large amount of time. To save this time, Cleveroad has created one of the control elements called CRRulerControl. CRRulerControl is a ruler that can adjust to any your requirements in just a few seconds.
-
 ## Requirements
 * iOS 8 or higher
 
