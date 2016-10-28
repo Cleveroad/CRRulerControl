@@ -4,7 +4,7 @@
 
 ![Header image](/images/header.jpg)
 
-## Meet CRRulerControl - Customizable Control Element for iOS
+## Meet CRRulerControl - Customizable Control for iOS
 
 Cleveroad is happy to present a new library for iOS apps — CRRulerControl. Whether your app is going to operate over graphics or any scalable elements, ruler is crucial to provide users convenience and enhance their experience. Customizable component, created by Cleveroad iOS developers, is aimed at turning a simple ruler into a handy and smart instrument.
 
@@ -18,9 +18,9 @@ If you are ready to take a fresh look at traditional control elements, start wit
 [![Awesome](/images/logo-footer.png)](https://www.cleveroad.com/?utm_source=github&utm_medium=label&utm_campaign=contacts)
 <br/>
 
-A CocoaPod that simplifies the process of setting and reading values from the ruler. Supplied with UIControl subclass.
+A CocoaPod that simplifies the process of setting and reading values from the ruler.
 
-Creating control elements is rather a simple task. However, it may take fairly large amount of time. To save this time, Cleveroad has created one of the control elements called CRRulerControl. CRRulerControl is a ruler that can adjust to any your requirements in just a few seconds.
+Creating control elements is rather a simple task. However, it may take fairly large amount of time. To save this time, Cleveroad has created one of the control elements called CRRulerControl. CRRulerControl is a UIControl that can adjust to any your requirements in just a few seconds.
 
 ## Requirements
 * iOS 8 or higher
@@ -42,64 +42,50 @@ Usage
 
 ## CRRulerControl
 ####You can use storyboard to create a control element. 
-####Using IBOutlet
-```c
-//That will be called when user changes value.
-- (IBAction)rulerValueChaned:(CRRulerControl *)sender;
 
-//To set the ruler length at a distance of two minimal marks.
-//Priority value to the total length rulerWidth.
-//Can be set using storyboard. 
+```c
+//Setting the distance between the minimal marks.
 - @property (nonatomic) IBInspectable CGFloat spacingBetweenMarks; 
 
-//To set the length of the element that scrolls using storyboard. 
+//Setting ruler width 
 - @property (nonatomic) IBInspectable CGFloat rulerWidth; 
 
-//To set the initial value in the leftmost point using storyboard.
+//Setting the minimum value
 - @property (nonatomic) IBInspectable CGFloat rangeFrom; 
 
-//To set the length of the ruler in value from the left border to the right one using storyboard.
+//Setting the length of liner
 - @property (nonatomic) IBInspectable CGFloat rangeLength; 
 
-//To set the initial value using storyboard.
+//Setting value.
 - @property (nonatomic) IBInspectable CGFloat value; 
 
-//To set any image and change a pointing element. 
+//Setting image of pointer 
 - @property (nonatomic, readonly) UIImageView *pointerImageView; 
 
-//To add some other elements over the ruler. 
 - @property (nonatomic, readonly) UIScrollView *scrollView; 
 
-//To change value with animation or without it. 
+//Setting with animation or without it. 
 - (void)setValue:(CGFloat)value animated:(BOOL)animated; 
 
-//To create the successor from CRRulerControl and redefine the position pointing element.
 - (CGRect)frameForPointerImageView; 
 
-//To find out contentOffset of scrollView by value on CRRulerControl
 - (CGPoint)contentOffsetForValue:(CGFloat)value; 
 
-//To set the size of the lines for one of the three types of Marks (Major, Middle,Minor)
+//To set the size of the lines
 - (void)setSize:(CGSize)size forMarkType:(CRRulerMarkType)markType; 
 
-//To set the color of the lines for one of the three types of Marks (Major, Middle,Minor)
+//To set the color of the lines
 - (void)setColor:(UIColor *)color forMarkType:(CRRulerMarkType)markType; 
 
-//To set the text of the lines for one of the three types of Marks (Major, Middle,Minor)
+//To set the text of the lines
 - (void)setTextColor:(UIColor *)textColor forMarkType:(CRRulerMarkType)markType; 
 
-//To set the font to the text of the lines for one of the three types of Marks (Major, Middle,Minor)
+//To set the font to the text
 - (void)setFont:(UIFont *)font forMarkType:(CRRulerMarkType)markType; 
 
-//To set the frequency of lines appearance of one of the three types of Marks (Major, Middle,Minor). The frequency is entered to value and should be a multiple of the Minor frequency.
+//To set the frequency of lines appearance
 - (void)setFrequency:(CGFloat)frequency forMarkType:(CRRulerMarkType)markType; 
 ```
-####Custom particle images
-
-- Use images with transparent background;
-- You can put an image on the pointing element
-- You can add an image to any point of the line knowing the value of this point
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
