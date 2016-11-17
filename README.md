@@ -34,7 +34,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 CRRulerControl is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```
+```ruby
 pod "CRRulerControl"
 ```
 and run pod install in terminal.
@@ -43,7 +43,7 @@ Usage
 ## CRRulerControl
 ####You can use storyboard to create a control element. 
 
-```c
+```objective-c
 //Setting the distance between the minimal marks.
 - @property (nonatomic) IBInspectable CGFloat spacingBetweenMarks; 
 
@@ -89,7 +89,6 @@ Usage
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 
 ## Support
 
