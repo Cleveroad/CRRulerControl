@@ -159,7 +159,7 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 }
 
 - (CGFloat)offsetCoefficient {
-    NSInteger distance = self.rulerRange.length;
+    CGFloat distance = self.rulerRange.length;
     return (self.scrollView.contentSize.width - kSideOffset * 2) / distance;
 }
 
