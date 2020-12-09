@@ -166,9 +166,9 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 #pragma mark - User interaction
 
 - (void)tintColorDidChange {
-    [self setColor:self.tintColor forMarkType:CRRulerMarkTypeAll];
-    [self setTextColor:self.tintColor forMarkType:CRRulerMarkTypeMiddle | CRRulerMarkTypeMajor];
-    self.pointerImageView.backgroundColor = self.tintColor;
+//    [self setColor:self.tintColor forMarkType:CRRulerMarkTypeAll];
+//    [self setTextColor:self.tintColor forMarkType:CRRulerMarkTypeMiddle | CRRulerMarkTypeMajor];
+//    self.pointerImageView.backgroundColor = self.tintColor;
 }
 
 #pragma mark - Setters
