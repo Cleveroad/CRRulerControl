@@ -21,7 +21,7 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 @property (nonatomic) CRRulerLayer *rulerLayer;
 @property (nonatomic, readwrite) UIScrollView *scrollView;
 @property (nonatomic, readwrite) UIImageView *pointerImageView;
-
+@property (nonatomic, assign) BOOL isSetValued;
 @end
 
 @implementation CRRulerControl
@@ -129,7 +129,12 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat oldValue = _value;
-    _value = [self valueForContentOffset:scrollView.contentOffset];
+    if (_isSetValued) {
+        _value = [self valueForContentOffset:[self contentOffsetForValue:_value]];
+        _isSetValued = false;
+    }else{
+        _value = [self valueForContentOffset:scrollView.contentOffset];
+    }
     if (oldValue != _value) {
         [self sendActionsForControlEvents:UIControlEventValueChanged];
     }
@@ -216,6 +221,7 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 
 - (void)setValue:(CGFloat)value animated:(BOOL)animated {
     _value = value;
+    _isSetValued = true;
     [self.scrollView setContentOffset:[self contentOffsetForValue:value] animated:animated];
 }
 
