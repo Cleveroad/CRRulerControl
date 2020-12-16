@@ -21,7 +21,7 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 @property (nonatomic) CRRulerLayer *rulerLayer;
 @property (nonatomic, readwrite) UIScrollView *scrollView;
 @property (nonatomic, readwrite) UIImageView *pointerImageView;
-
+@property (nonatomic, assign) BOOL isSetValued;
 @end
 
 @implementation CRRulerControl
@@ -129,7 +129,12 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat oldValue = _value;
-    _value = [self valueForContentOffset:scrollView.contentOffset];
+    if (_isSetValued) {
+        _value = [self valueForContentOffset:[self contentOffsetForValue:_value]];
+        _isSetValued = false;
+    }else{
+        _value = [self valueForContentOffset:scrollView.contentOffset];
+    }
     if (oldValue != _value) {
         [self sendActionsForControlEvents:UIControlEventValueChanged];
     }
@@ -159,16 +164,16 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 }
 
 - (CGFloat)offsetCoefficient {
-    NSInteger distance = self.rulerRange.length;
+    CGFloat distance = self.rulerRange.length;
     return (self.scrollView.contentSize.width - kSideOffset * 2) / distance;
 }
 
 #pragma mark - User interaction
 
 - (void)tintColorDidChange {
-    [self setColor:self.tintColor forMarkType:CRRulerMarkTypeAll];
-    [self setTextColor:self.tintColor forMarkType:CRRulerMarkTypeMiddle | CRRulerMarkTypeMajor];
-    self.pointerImageView.backgroundColor = self.tintColor;
+//    [self setColor:self.tintColor forMarkType:CRRulerMarkTypeAll];
+//    [self setTextColor:self.tintColor forMarkType:CRRulerMarkTypeMiddle | CRRulerMarkTypeMajor];
+//    self.pointerImageView.backgroundColor = self.tintColor;
 }
 
 #pragma mark - Setters
@@ -216,6 +221,7 @@ static const CGSize  kPointerImageViewSize = {2, 30};
 
 - (void)setValue:(CGFloat)value animated:(BOOL)animated {
     _value = value;
+    _isSetValued = true;
     [self.scrollView setContentOffset:[self contentOffsetForValue:value] animated:animated];
 }
 
